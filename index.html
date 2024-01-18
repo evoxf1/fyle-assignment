@@ -8,10 +8,28 @@
 </head>
 <body>
     <div class="container">
-        <h1>Github Repositories</h1>
+        <div class="top-bar">
+            <button id="searchUser">Search User</button>
+        <div class="pagination-controls">
+          
+            <span>Show:</span>
+            <select id="perPageSelector" onchange="changePerPage(parseInt(this.value))">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+        </div>
+        <div class="account-info">
+            <img src="" alt="Account Photo" class="account-photo" id="account-photo">
+            <div class="account-details" id="account-details"></div>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search repositories...">
+        </div>
         <div id="loader" class="loader"></div>
-        <div id="repositories"></div>
-        <div id="pagination" class="pagination"></div>
+        <div id="repositories" class="repository-grid"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
