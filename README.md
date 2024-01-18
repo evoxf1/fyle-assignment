@@ -4,7 +4,7 @@ This is a simple web application to display public GitHub repositories for a spe
 
 ## How to Run Locally
 
-1. Clone the repository: `git clone <https://github.com/evoxf1/fyle-assignment>`
+1. Clone the repository: `gh repo clone evoxf1/fyle-assignment`
 2. Open `index.html` in your web browser.
 
 ## Live Demo
